@@ -1,0 +1,33 @@
+$darkGray: #acacac;
+$mainColor: pink;
+
+.navbar {
+  background: $darkGray;
+  border: 1px solid red;
+}
+
+.aside-nav {
+  list-style: none;
+  padding: 0;
+  li {
+    text-align: center;
+    border-bottom: 1px solid $darkGray;
+    a {
+      font-style: italic;
+    }
+    &.active {
+      background: gray;
+      color: white;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:last-of-type {
+      background: $mainColor;
+    }
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
